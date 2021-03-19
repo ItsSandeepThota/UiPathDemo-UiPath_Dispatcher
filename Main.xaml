@@ -549,17 +549,17 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.To>
-                            <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="144,122.4" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+                            <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="523.2,1004" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
                               <State.Entry>
-                                <Sequence sap:VirtualizedContainerService.HintSize="478.4,664.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                <Sequence sap:VirtualizedContainerService.HintSize="478.4,859.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,187.2" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,381.6" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                                     <TryCatch.Try>
-                                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;&lt;p&gt;Hello Team &lt;/p&gt; &lt;p&gt; The Dispatcher bot has successfully executed for today. There are&quot; +TransactionData.Rows.Count.ToString+&quot; rows of data present in the excel sheet. Please, reach out to me if you have any queries.&lt;/p&gt;&lt;p&gt;Thank you&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="sthota2@miraclesoft.com" EnableSSL="True" From="sthota2@miraclesoft.com" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="True" Password="Sandeep@0353" Port="587" SecureConnection="Auto" Server="smtp.miraclesoft.com" Subject="[&quot;(Success) Dispatcher - UiPath Demo App for &quot;+DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" To="sthota2@miraclesoft.com">
+                                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;&lt;p&gt;Hello Team &lt;/p&gt; &lt;p&gt; The Dispatcher bot has successfully executed for today. There are &quot; +TransactionData.Rows.Count.ToString+&quot; rows of data present in the excel sheet. Please, reach out to me if you have any queries.&lt;/p&gt;&lt;p&gt;Thank you&lt;/p&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="sthota2@miraclesoft.com" EnableSSL="True" From="sthota2@miraclesoft.com" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="True" Password="Sandeep@0353" Port="587" SecureConnection="Auto" Server="smtp.miraclesoft.com" Subject="[&quot;(Success) Dispatcher - UiPath Demo App for &quot;+DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" To="sthota2@miraclesoft.com">
                                         <ui:SendMail.Files>
                                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                                             <InArgument x:TypeArguments="x:String">
@@ -570,10 +570,10 @@
                                       </ui:SendMail>
                                     </TryCatch.Try>
                                     <TryCatch.Catches>
-                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,216.8" sap2010:WorkflowViewState.IdRef="Catch`1_12">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
