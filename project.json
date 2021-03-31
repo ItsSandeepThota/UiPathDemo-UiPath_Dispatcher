@@ -4,7 +4,6 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.5]",
-    "UiPath.Mail.Activities": "[1.10.2-preview]",
     "UiPath.System.Activities": "[20.10.4]",
     "UiPath.UIAutomation.Activities": "[20.10.9]"
   },
@@ -12,7 +11,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.6.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -50,5 +49,6 @@
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {}
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
