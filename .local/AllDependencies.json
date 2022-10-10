@@ -1341,7 +1341,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win7-x86": {
+    ".NETFramework,Version=v4.6.1/win10-x64": {
       "AForge/2.2.5": {
         "type": "package",
         "compile": {
@@ -4288,9 +4288,9 @@
     "restore": {
       "projectUniqueName": "UiPathDemo_GITIntegration",
       "projectName": "UiPathDemo_GITIntegration",
-      "projectPath": "C:\\Users\\HP\\Documents\\UiPath\\UiPathDemo_GITIntegration\\.local",
+      "projectPath": "C:\\Users\\HP\\Documents\\UiPath\\Codes\\.local",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\UiPath\\UiPathDemo_GITIntegration\\.local"
+      "outputPath": "C:\\Users\\HP\\Documents\\UiPath\\Codes\\.local"
     },
     "frameworks": {
       "net461": {
@@ -4311,7 +4311,12 @@
             "version": "[20.10.9, 20.10.9]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\HP\\AppData\\Local\\UiPath\\app-21.4.0\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\HP\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+      }
+    },
+    "runtimes": {
+      "win10-x64": {
+        "#import": []
       }
     }
   }
