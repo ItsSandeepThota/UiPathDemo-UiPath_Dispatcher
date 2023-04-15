@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "UVg8SrE1S0yFa5scnGUj5pBFAEq+5rl4gowGXNMRhZSlZHfu6iTvF9iR3iAndma3BQdEeQlbaUThSbsVD4NUrQ==",
+=======
+  "dgSpecHash": "fC6K2KIJLFR/FrwtFn1n7InfckCg/bKhhV4ku5haqrFTm1mTN+UQyvLLBabQtE9o5vUy2kr5KJudEkyTUGA/DQ==",
+>>>>>>> 8348bdde6fd288c1986fab2afb5f0d790fb40a82
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Documents\\UiPath\\Codes\\.local\\",
   "expectedPackageFiles": [
