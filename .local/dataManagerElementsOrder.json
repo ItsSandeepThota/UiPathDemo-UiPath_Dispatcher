@@ -1,0 +1,84 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "TransactionData&StateMachine_1",
+        "InputFileExists&StateMachine_1",
+        "InputDT&StateMachine_1",
+        "UploadComplete&StateMachine_1",
+        "ShouldStop&Sequence_25",
+        "OnUsCheck&Sequence_29"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "OnUsCheck&Sequence_2",
+        "CashIn&Sequence_2",
+        "NotOnUsCheck&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "InputDT",
+        "UploadComplete"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/TestWorkflowTemplate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TableElements&Sequence_2",
+        "ExtractDatatable&Sequence_3",
+        "ExtractDataTable&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestWorkflow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strArray_Input&Sequence_9",
+        "max_Value&Sequence_8",
+        "min_Value&Sequence_8",
+        "intArray_Input&Sequence_8",
+        "list_CxErrorCodes&Sequence_9",
+        "list_BxErrorCodes&Sequence_9",
+        "list_AxErrorCodes&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}
