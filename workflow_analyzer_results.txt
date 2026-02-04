@@ -1,0 +1,336 @@
+================================================================================
+UiPath Code Quality Analysis Report
+Generated: 2026-02-04 10:03:38
+Project: /home/runner/work/UiPathDemo-UiPath_Dispatcher/UiPathDemo-UiPath_Dispatcher
+================================================================================
+
+SUMMARY
+----------------------------------------
+Total Issues Found: 72
+  - Errors:   3
+  - Warnings: 34
+  - Info:     35
+
+RULES REFERENCE
+----------------------------------------
+ST-DBP-002: Unresolved Activity
+ST-DBP-003: Empty Catch Block
+ST-DBP-004: Delay Activity Usage
+ST-DBP-005: Invoked Workflow Path Issue
+ST-DBP-006: Empty Log Message
+ST-DBP-007: Missing Logging
+ST-NMG-001: Variable Naming (underscore prefix)
+ST-NMG-002: Hungarian Notation
+ST-NMG-003: Input Argument Prefix
+ST-NMG-004: Output Argument Prefix
+ST-NMG-005: InOut Argument Prefix
+ST-NMG-006: Default DisplayName
+ST-SEC-001: Hardcoded Email
+ST-SEC-002: Hardcoded Password
+ST-ANN-001: Missing Annotation
+ST-USG-001: High Activity Count
+ST-USG-002: Deep Nesting
+ST-XML-001: XML Parse Error
+ST-XML-002: Analysis Error
+
+
+ERRORS (Must Fix)
+----------------------------------------
+[ST-DBP-002] Design
+  File: SendEmailNotification.xaml
+  Unresolved activity detected: 'Send Outlook Mail Message (SendOutlookMailMessage)'. This activity may be missing dependencies or is broken.
+
+[ST-DBP-002] Design
+  File: SendEmailNotification.xaml
+  Unresolved activity detected: 'Unknown'. This activity may be missing dependencies or is broken.
+
+[ST-DBP-002] Design
+  File: SendEmailNotification.xaml
+  Unresolved activity detected: 'Unknown'. This activity may be missing dependencies or is broken.
+
+
+WARNINGS (Should Fix)
+----------------------------------------
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Main.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-USG-002] Maintainability
+  File: Main.xaml
+  Workflow has deep nesting (depth: 23). Consider refactoring into sub-workflows.
+
+[ST-SEC-001] Security
+  File: Fixed_SendEmailNotification.xaml
+  Hardcoded email address found: 'sandeepthota@gmail.com'. Consider using configuration or assets.
+
+[ST-SEC-001] Security
+  File: SendEmailNotification.xaml
+  Hardcoded email address found: 'sandeepthota@gmail.com'. Consider using configuration or assets.
+
+[ST-DBP-003] Best Practice
+  File: Send_Email.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Send_Email.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Send_Email.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Tests/RunAllTests.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Tests/RunAllTests.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Tests/RunAllTests.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/SetTransactionStatus.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/InitAllSettings.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/InitAllSettings.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/InitAllSettings.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+[ST-DBP-003] Best Practice
+  File: Framework/InitAllSettings.xaml
+  Empty Catch block detected. Consider logging the exception or handling it properly.
+
+
+INFO (Recommendations)
+----------------------------------------
+[ST-USG-001] Maintainability
+  File: Main.xaml
+  Workflow has 273 activities. Consider breaking down into smaller workflows.
+
+[ST-ANN-001] Readability
+  File: Fixed_SendEmailNotification.xaml
+  Main activity lacks an annotation. Consider adding a description for maintainability.
+
+[ST-DBP-007] Best Practice
+  File: Fixed_SendEmailNotification.xaml
+  No LogMessage activities found. Consider adding logging for debugging and monitoring.
+
+[ST-NMG-003] Naming Convention
+  File: SendEmailNotification.xaml
+  Input argument 'InputDT' does not follow 'in_' prefix convention.
+
+[ST-NMG-003] Naming Convention
+  File: SendEmailNotification.xaml
+  Input argument 'UploadComplete' does not follow 'in_' prefix convention.
+
+[ST-DBP-007] Best Practice
+  File: SendEmailNotification.xaml
+  No LogMessage activities found. Consider adding logging for debugging and monitoring.
+
+[ST-ANN-001] Readability
+  File: LoopThroughEachRowInDataTable.xaml
+  Main activity lacks an annotation. Consider adding a description for maintainability.
+
+[ST-NMG-006] Readability
+  File: LoopThroughEachRowInDataTable.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-ANN-001] Readability
+  File: Send_Email.xaml
+  Main activity lacks an annotation. Consider adding a description for maintainability.
+
+[ST-NMG-006] Readability
+  File: Send_Email.xaml
+  Activity has default DisplayName: 'Try'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: Send_Email.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: Send_Email.xaml
+  Activity has default DisplayName: 'Finally'. Consider using a descriptive name.
+
+[ST-NMG-003] Naming Convention
+  File: Process.xaml
+  Input argument 'InputDT' does not follow 'in_' prefix convention.
+
+[ST-NMG-005] Naming Convention
+  File: Process.xaml
+  InOut argument 'UploadComplete' does not follow 'io_' prefix convention.
+
+[ST-NMG-006] Readability
+  File: Process.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-DBP-007] Best Practice
+  File: Process.xaml
+  No LogMessage activities found. Consider adding logging for debugging and monitoring.
+
+[ST-NMG-002] Naming Convention
+  File: TestWorkflow.xaml
+  Variable 'intArray_Input' appears to use Hungarian notation. Consider using descriptive names instead.
+
+[ST-NMG-002] Naming Convention
+  File: TestWorkflow.xaml
+  Variable 'strArray_Input' appears to use Hungarian notation. Consider using descriptive names instead.
+
+[ST-ANN-001] Readability
+  File: TestWorkflow.xaml
+  Main activity lacks an annotation. Consider adding a description for maintainability.
+
+[ST-USG-001] Maintainability
+  File: TestWorkflow.xaml
+  Workflow has 112 activities. Consider breaking down into smaller workflows.
+
+[ST-NMG-006] Readability
+  File: TestWorkflow.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: TestWorkflow.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: TestWorkflow.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: TestWorkflow.xaml
+  Activity has default DisplayName: 'Switch'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: TestWorkflow.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: TestWorkflow.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: TestWorkflow.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-NMG-006] Readability
+  File: Tests/TestWorkflowTemplate.xaml
+  Activity has default DisplayName: 'Body'. Consider using a descriptive name.
+
+[ST-DBP-007] Best Practice
+  File: Tests/TestWorkflowTemplate.xaml
+  No LogMessage activities found. Consider adding logging for debugging and monitoring.
+
+[ST-DBP-007] Best Practice
+  File: Tests/RunAllTests_Logging.xaml
+  No LogMessage activities found. Consider adding logging for debugging and monitoring.
+
+[ST-USG-001] Maintainability
+  File: Tests/RunAllTests.xaml
+  Workflow has 124 activities. Consider breaking down into smaller workflows.
+
+[ST-NMG-005] Naming Convention
+  File: Framework/GetTransactionData.xaml
+  InOut argument 'InputDataTable' does not follow 'io_' prefix convention.
+
+[ST-DBP-007] Best Practice
+  File: Framework/GetTransactionData.xaml
+  No LogMessage activities found. Consider adding logging for debugging and monitoring.
+
+[ST-NMG-005] Naming Convention
+  File: Framework/InitAllApplications.xaml
+  InOut argument 'InputFileExists' does not follow 'io_' prefix convention.
+
+[ST-USG-001] Maintainability
+  File: Framework/SetTransactionStatus.xaml
+  Workflow has 186 activities. Consider breaking down into smaller workflows.
+
+
+================================================================================
+End of Report
+================================================================================
