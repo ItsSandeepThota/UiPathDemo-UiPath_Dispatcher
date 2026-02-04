@@ -1,80 +1,36 @@
-Generate a UiPath workflow file (.xaml) with the following specifications.
-
-**Project and File Name:**
-- Project Name: UiPathDemo_GITIntegration
-- File Name: Process.xaml
-
-**Packages & Dependencies:**
-Ensure the workflow references these packages:
-- `UiPath.System.Activities` (version 25.12.2 or higher)
-- `UiPath.Excel.Activities` (version 2.11.4 or higher)
-- `UiPath.UIAutomation.Activities` (version 21.10.10 or higher)
-
-**Workflow Arguments:**
-Define the following arguments for the workflow:
-1.  `in_Config`:
-    -   Direction: In
-    -   Type: `System.Collections.Generic.Dictionary<System.String, System.Object>`
-    -   Purpose: Holds configuration data, including the Orchestrator queue name.
-2.  `InputDT`:
-    -   Direction: In
-    -   Type: `System.Data.DataTable`
-    -   Purpose: The input table containing records to be added to the queue.
-3.  `UploadComplete`:
-    -   Direction: InOut
-    -   Type: `System.Boolean`
-    -   Purpose: A flag that will be set to `True` upon successful completion.
-
-**Workflow Variables:**
-Define the following variables scoped to the main sequence:
-1.  `OnUsCheck`: Type `System.String`
-2.  `CashIn`: Type `System.String`
-3.  `NotOnUsCheck`: Type `System.String`
-
-**Workflow Activity Structure:**
-
-1.  **Create a root `Sequence` activity.**
-    -   Set its `DisplayName` to "Data Dispatcher Process".
-
-2.  **Inside the root Sequence, add a `For Each Row in Data Table` activity.**
-    -   `DisplayName`: "Iterate Through Input Data"
-    -   `DataTable` property: Set to the argument `InputDT`.
-    -   The loop variable for the current row should be named `row`.
-
-3.  **Inside the `Body` of the `For Each Row` loop, add the following activities in order:**
-
-    a. **Add a `Try Catch` activity** to handle potential errors for each row.
-
-    b. **Inside the `Try` block of the `Try Catch` activity:**
-        i. **Add an `Assign` activity.**
-            -   `DisplayName`: "Extract CashIn"
-            -   `To`: `CashIn`
-            -   `Value`: `row("CashIn").ToString()`
-        ii. **Add another `Assign` activity.**
-            -   `DisplayName`: "Extract OnUsCheck"
-            -   `To`: `OnUsCheck`
-            -   `Value`: `row("OnUsCheck").ToString()`
-        iii. **Add a third `Assign` activity.**
-            -   `DisplayName`: "Extract NotOnUsCheck"
-            -   `To`: `NotOnUsCheck`
-            -   `Value`: `row("NotOnUsCheck").ToString()`
-        iv. **Add an `Add Queue Item` activity.**
-            -   `DisplayName`: "Add Item to Orchestrator Queue"
-            -   `QueueName` property: `in_Config("OrchestratorQueueName").ToString()`
-            -   `Reference` property: `row("TransactionID").ToString()` (assuming a unique ID column exists)
-            -   In the `ItemInformation` collection property, add the following key-value pairs:
-                -   Key: `"CashIn"`, Value: `CashIn`
-                -   Key: `"OnUsCheck"`, Value: `OnUsCheck`
-                -   Key: `"NotOnUsCheck"`, Value: `NotOnUsCheck`
-
-    c. **Inside the `Catches` block of the `Try Catch` activity:**
-        i. **Add a new `Catch` for `System.Exception`** with a variable named `exception`.
-        ii. Inside this catch, add a **`Log Message` activity.**
-            -   `DisplayName`: "Log Failed Item"
-            -   `LogLevel`: `Error`
-            -   `Message`: `"Failed to add item to queue. Error: " + exception.Message`
-
-4.  **After the `For Each Row` loop, add a final `Assign` activity.**
-    -   `DisplayName`: "Set Upload as Complete"
-    -   `To`: `UploadComplete`
-    -   `Value`: `True`
+Dynamic Instructions for Robust Workflow Generation
+Here is a high-level framework to ensure workflows are created successfully and without issues.
+Phase 1: Define the Core Objective Clearly
+This is the most critical step. The goal must be specific and unambiguous.
+Generic Instruction: "Define the primary action of the workflow."
+Our Send Email Example: "The core objective is to send an email."
+Phase 2: Specify Key Parameters and Configuration
+Provide all necessary details for the core activity. This avoids ambiguity and errors.
+Generic Instruction: "For the primary action, define all required parameters. Use variables for dynamic data and hardcoded values for static data."
+Our Send Email Example:
+Activity: "Use the classic Send Outlook Mail Message activity." (This specifies the exact tool).
+Recipient (To): "Set to the static value '
+sandeepthota@gmail.com
+'."
+Subject: "Set to the static value 'Send email with GitHub Copilot'."
+Body: "Set to the static value 'Test'."
+Phase 3: Implement Error Handling Strategy
+Plan for what happens when things go wrong. This makes the workflow robust.
+Generic Instruction: "Enclose the core activity within a Try-Catch block. In the Catch block, define the error response, such as logging the error or throwing a new, more descriptive exception."
+Our Send Email Example: "Surround the Send Outlook Mail Message activity with a Try-Catch block. If an exception occurs, Throw a new System.Exception with the message 'Failed to send email'."
+Phase 4: Ensure Clean and Valid Structure
+A workflow should only contain what it needs to run. Extraneous elements cause validation errors.
+Generic Instruction: "Ensure the final workflow does not contain any placeholder, unresolved, or unnecessary activities. For any non-main workflow, remove any trigger activities (e.g., 'Manual Trigger')."
+Our Send Email Example: "After generating the logic, verify that the Manual Trigger activity is removed, as this is not an entry-point workflow."
+Putting It All Together for a Future Request
+So, if you were to ask me to generate another workflow, you could structure your request like this:
+"Generate a new workflow named ProcessInvoice.xaml.
+Core Objective: Read data from an Excel file.
+Parameters:
+Use the Read Range activity.
+The file path should be a variable named invoicePath.
+The output should be a DataTable variable named invoiceData.
+Error Handling:
+Wrap the Read Range activity in a Try-Catch block.
+In the Catch block, log a message saying 'Failed to read invoice file'."
+By following this structured, dynamic approach, we can ensure that the workflows I generate for you are consistently robust, error-free, and perfectly aligned with your requirements.
