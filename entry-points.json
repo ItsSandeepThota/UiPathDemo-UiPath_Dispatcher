@@ -2,6 +2,32 @@
   "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
   "entryPoints": [
     {
+      "filePath": "Fixed_SendEmailNotification.xaml",
+      "uniqueId": "d9f33f87-0fd3-40ca-a356-792f69584a10",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "UiPathEventConnector": {
+            "type": "string"
+          },
+          "UiPathEvent": {
+            "type": "string"
+          },
+          "UiPathEventObjectType": {
+            "type": "string"
+          },
+          "UiPathEventObjectId": {
+            "type": "string"
+          },
+          "UiPathAdditionalEventData": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    },
+    {
       "filePath": "Main.xaml",
       "uniqueId": "a39c1aea-0e4d-41d4-8735-b6dba8c256cb",
       "type": "process",
@@ -11,6 +37,32 @@
           "in_OrchestratorQueueName": {
             "type": "string",
             "description": "Allows the Orchestrator queue name to be passed as an argument, instead of only being defined in the configuration file."
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "filePath": "Send_Email.xaml",
+      "uniqueId": "8e2e7518-fcf5-4932-9141-a71b3e73e65c",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "UiPathEventConnector": {
+            "type": "string"
+          },
+          "UiPathEvent": {
+            "type": "string"
+          },
+          "UiPathEventObjectType": {
+            "type": "string"
+          },
+          "UiPathEventObjectId": {
+            "type": "string"
+          },
+          "UiPathAdditionalEventData": {
+            "type": "string"
           }
         },
         "required": []

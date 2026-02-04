@@ -1,4 +1,30 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Send_Email" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Send_Email_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Send_Email" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="UiPathEventConnector" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEvent" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEventObjectType" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEventObjectId" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathAdditionalEventData" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Send_Email.UiPathEventConnector>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Send_Email.UiPathEventConnector>
+  <this:Send_Email.UiPathEvent>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Send_Email.UiPathEvent>
+  <this:Send_Email.UiPathEventObjectType>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Send_Email.UiPathEventObjectType>
+  <this:Send_Email.UiPathEventObjectId>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Send_Email.UiPathEventObjectId>
+  <this:Send_Email.UiPathAdditionalEventData>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Send_Email.UiPathAdditionalEventData>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Send_Email_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -122,6 +148,9 @@
       <x:String>UiPath.Mail</x:String>
       <x:String>UiPath.Mail.Outlook.Activities</x:String>
       <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -243,18 +272,38 @@
       <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="1567,925.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <sap:WorkflowViewStateService.ViewState>
-      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-      </scg:Dictionary>
-    </sap:WorkflowViewStateService.ViewState>
-    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Hello,&quot; + Environment.NewLine + Environment.NewLine + &quot;The queue data upload process has been completed successfully.&quot; + Environment.NewLine + Environment.NewLine + &quot;Queue Details:&quot; + Environment.NewLine + &quot;- Upload Status: Complete&quot; + Environment.NewLine + Environment.NewLine + &quot;Each row contains:&quot; + Environment.NewLine + &quot;- CashIn (Column 0)&quot; + Environment.NewLine + &quot;- OnUsCheck (Column 1)&quot; + Environment.NewLine + &quot;- NotOnUsCheck (Column 2)&quot; + Environment.NewLine + Environment.NewLine + &quot;Best regards,&quot; + Environment.NewLine + &quot;UiPath Automation&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="450,176" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="%[EmailSubject]" To="sandeepthota@gmail.com">
-      <ui:SendOutlookMail.Files>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-      </ui:SendOutlookMail.Files>
-    </ui:SendOutlookMail>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="A manual trigger to start the process." sap:VirtualizedContainerService.HintSize="450,79" sap2010:WorkflowViewState.IdRef="ManualTrigger_6" />
+    <TryCatch DisplayName="Handle potential errors during email notification" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+      <TryCatch.Try>
+        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendEmailNotification.xaml workflow" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SendEmailNotification.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_20" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:LogMessage DisplayName="Inform the user that the edit scenario is disabled and provide instructions to enable it." sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;The requested changes cannot be automated at this time because the workflow editing scenario is disabled. To enable this, please go to UiPath Studio settings, navigate to the 'Design' tab, and enable the 'Enable experimental RPA WorkflowAssistant features' option. Please be aware that this is an experimental feature and is subject to change. It is expected to reach General Availability (GA) quality in early 2026.&quot;]" />
   </Sequence>
 </Activity>
