@@ -1,0 +1,594 @@
+{
+  "timestamp": "2026-02-04T10:03:38.658063",
+  "project": "/home/runner/work/UiPathDemo-UiPath_Dispatcher/UiPathDemo-UiPath_Dispatcher",
+  "summary": {
+    "total": 72,
+    "errors": 3,
+    "warnings": 34,
+    "info": 35
+  },
+  "issues": {
+    "errors": [
+      {
+        "severity": "Error",
+        "category": "Design",
+        "rule": "ST-DBP-002",
+        "file": "SendEmailNotification.xaml",
+        "message": "Unresolved activity detected: 'Send Outlook Mail Message (SendOutlookMailMessage)'. This activity may be missing dependencies or is broken.",
+        "line": null
+      },
+      {
+        "severity": "Error",
+        "category": "Design",
+        "rule": "ST-DBP-002",
+        "file": "SendEmailNotification.xaml",
+        "message": "Unresolved activity detected: 'Unknown'. This activity may be missing dependencies or is broken.",
+        "line": null
+      },
+      {
+        "severity": "Error",
+        "category": "Design",
+        "rule": "ST-DBP-002",
+        "file": "SendEmailNotification.xaml",
+        "message": "Unresolved activity detected: 'Unknown'. This activity may be missing dependencies or is broken.",
+        "line": null
+      }
+    ],
+    "warnings": [
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Main.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Maintainability",
+        "rule": "ST-USG-002",
+        "file": "Main.xaml",
+        "message": "Workflow has deep nesting (depth: 23). Consider refactoring into sub-workflows.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Security",
+        "rule": "ST-SEC-001",
+        "file": "Fixed_SendEmailNotification.xaml",
+        "message": "Hardcoded email address found: 'sandeepthota@gmail.com'. Consider using configuration or assets.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Security",
+        "rule": "ST-SEC-001",
+        "file": "SendEmailNotification.xaml",
+        "message": "Hardcoded email address found: 'sandeepthota@gmail.com'. Consider using configuration or assets.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Send_Email.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Send_Email.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Send_Email.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Tests/RunAllTests.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Tests/RunAllTests.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Tests/RunAllTests.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/InitAllSettings.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/InitAllSettings.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/InitAllSettings.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      },
+      {
+        "severity": "Warning",
+        "category": "Best Practice",
+        "rule": "ST-DBP-003",
+        "file": "Framework/InitAllSettings.xaml",
+        "message": "Empty Catch block detected. Consider logging the exception or handling it properly.",
+        "line": null
+      }
+    ],
+    "info": [
+      {
+        "severity": "Info",
+        "category": "Maintainability",
+        "rule": "ST-USG-001",
+        "file": "Main.xaml",
+        "message": "Workflow has 273 activities. Consider breaking down into smaller workflows.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-ANN-001",
+        "file": "Fixed_SendEmailNotification.xaml",
+        "message": "Main activity lacks an annotation. Consider adding a description for maintainability.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Best Practice",
+        "rule": "ST-DBP-007",
+        "file": "Fixed_SendEmailNotification.xaml",
+        "message": "No LogMessage activities found. Consider adding logging for debugging and monitoring.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-003",
+        "file": "SendEmailNotification.xaml",
+        "message": "Input argument 'InputDT' does not follow 'in_' prefix convention.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-003",
+        "file": "SendEmailNotification.xaml",
+        "message": "Input argument 'UploadComplete' does not follow 'in_' prefix convention.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Best Practice",
+        "rule": "ST-DBP-007",
+        "file": "SendEmailNotification.xaml",
+        "message": "No LogMessage activities found. Consider adding logging for debugging and monitoring.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-ANN-001",
+        "file": "LoopThroughEachRowInDataTable.xaml",
+        "message": "Main activity lacks an annotation. Consider adding a description for maintainability.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "LoopThroughEachRowInDataTable.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-ANN-001",
+        "file": "Send_Email.xaml",
+        "message": "Main activity lacks an annotation. Consider adding a description for maintainability.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "Send_Email.xaml",
+        "message": "Activity has default DisplayName: 'Try'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "Send_Email.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "Send_Email.xaml",
+        "message": "Activity has default DisplayName: 'Finally'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-003",
+        "file": "Process.xaml",
+        "message": "Input argument 'InputDT' does not follow 'in_' prefix convention.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-005",
+        "file": "Process.xaml",
+        "message": "InOut argument 'UploadComplete' does not follow 'io_' prefix convention.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "Process.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Best Practice",
+        "rule": "ST-DBP-007",
+        "file": "Process.xaml",
+        "message": "No LogMessage activities found. Consider adding logging for debugging and monitoring.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-002",
+        "file": "TestWorkflow.xaml",
+        "message": "Variable 'intArray_Input' appears to use Hungarian notation. Consider using descriptive names instead.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-002",
+        "file": "TestWorkflow.xaml",
+        "message": "Variable 'strArray_Input' appears to use Hungarian notation. Consider using descriptive names instead.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-ANN-001",
+        "file": "TestWorkflow.xaml",
+        "message": "Main activity lacks an annotation. Consider adding a description for maintainability.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Maintainability",
+        "rule": "ST-USG-001",
+        "file": "TestWorkflow.xaml",
+        "message": "Workflow has 112 activities. Consider breaking down into smaller workflows.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "TestWorkflow.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "TestWorkflow.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "TestWorkflow.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "TestWorkflow.xaml",
+        "message": "Activity has default DisplayName: 'Switch'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "TestWorkflow.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "TestWorkflow.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "TestWorkflow.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Readability",
+        "rule": "ST-NMG-006",
+        "file": "Tests/TestWorkflowTemplate.xaml",
+        "message": "Activity has default DisplayName: 'Body'. Consider using a descriptive name.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Best Practice",
+        "rule": "ST-DBP-007",
+        "file": "Tests/TestWorkflowTemplate.xaml",
+        "message": "No LogMessage activities found. Consider adding logging for debugging and monitoring.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Best Practice",
+        "rule": "ST-DBP-007",
+        "file": "Tests/RunAllTests_Logging.xaml",
+        "message": "No LogMessage activities found. Consider adding logging for debugging and monitoring.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Maintainability",
+        "rule": "ST-USG-001",
+        "file": "Tests/RunAllTests.xaml",
+        "message": "Workflow has 124 activities. Consider breaking down into smaller workflows.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-005",
+        "file": "Framework/GetTransactionData.xaml",
+        "message": "InOut argument 'InputDataTable' does not follow 'io_' prefix convention.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Best Practice",
+        "rule": "ST-DBP-007",
+        "file": "Framework/GetTransactionData.xaml",
+        "message": "No LogMessage activities found. Consider adding logging for debugging and monitoring.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Naming Convention",
+        "rule": "ST-NMG-005",
+        "file": "Framework/InitAllApplications.xaml",
+        "message": "InOut argument 'InputFileExists' does not follow 'io_' prefix convention.",
+        "line": null
+      },
+      {
+        "severity": "Info",
+        "category": "Maintainability",
+        "rule": "ST-USG-001",
+        "file": "Framework/SetTransactionStatus.xaml",
+        "message": "Workflow has 186 activities. Consider breaking down into smaller workflows.",
+        "line": null
+      }
+    ]
+  }
+}
