@@ -1,0 +1,40 @@
+name: UiPath Code Quality Check
+
+on:
+  pull_request:
+    branches:
+      - main # Trigger on PRs targeting the `main` branch
+
+  push:
+    branches: 
+      - '**' # Trigger on all branch pushes
+
+jobs:
+  analyze-code-quality:
+    name: Run UiPath Workflow Analyzer
+    runs-on: windows-latest
+
+    steps:
+      # Step 1: Checkout the repository code
+      - name: Checkout Repository Code
+        uses: actions/checkout@v3
+
+      # Step 2: Install UiPath CLI
+        shell: pwsh
+        run: |
+          Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+          Invoke-WebRequest -Uri "https://download.uipath.com/EdgeMSI/latest/uipcli.ps1" -OutFile uipcli.ps1
+          powershell -ExecutionPolicy Bypass -File ./uipcli.ps1
+
+      # Step 3: Run Workflow Analyzer (Code Quality Checks)
+      - name: Run Workflow Analyzer
+        run: |
+          uipcli validate -p "./" --output workflow_analyzer_results.json
+        continue-on-error: false
+
+      # Step 4: Upload Code Quality Results
+      - name: Upload Workflow Analyzer Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: uiPath-workflow-analyzer-results
+          path: workflow_analyzer_results.json
