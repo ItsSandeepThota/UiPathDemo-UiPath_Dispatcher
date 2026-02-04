@@ -281,12 +281,22 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_21">
-    <ui:ManualTrigger Result="{x:Null}" DisplayName="A manual trigger to start the process." sap:VirtualizedContainerService.HintSize="450,79" sap2010:WorkflowViewState.IdRef="ManualTrigger_6" />
-    <TryCatch DisplayName="Handle potential errors during email notification" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+  <Sequence sap:VirtualizedContainerService.HintSize="940,969.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="A manual trigger to start the process." sap:VirtualizedContainerService.HintSize="452,79" sap2010:WorkflowViewState.IdRef="ManualTrigger_6" />
+    <TryCatch DisplayName="Handle potential errors during email notification" sap:VirtualizedContainerService.HintSize="452,607" sap2010:WorkflowViewState.IdRef="TryCatch_4">
       <TryCatch.Try>
-        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_19">
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendEmailNotification.xaml workflow" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SendEmailNotification.xaml">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,241" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendEmailNotification.xaml workflow" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SendEmailNotification.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <scg:Dictionary x:TypeArguments="x:String, Argument" />
             </ui:InvokeWorkflowFile.Arguments>
@@ -299,11 +309,26 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_20" />
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
     </TryCatch>
-    <ui:LogMessage DisplayName="Inform the user that the edit scenario is disabled and provide instructions to enable it." sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;The requested changes cannot be automated at this time because the workflow editing scenario is disabled. To enable this, please go to UiPath Studio settings, navigate to the 'Design' tab, and enable the 'Enable experimental RPA WorkflowAssistant features' option. Please be aware that this is an experimental feature and is subject to change. It is expected to reach General Availability (GA) quality in early 2026.&quot;]" />
+    <ui:LogMessage DisplayName="Inform the user that the edit scenario is disabled and provide instructions to enable it." sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;The requested changes cannot be automated at this time because the workflow editing scenario is disabled. To enable this, please go to UiPath Studio settings, navigate to the 'Design' tab, and enable the 'Enable experimental RPA WorkflowAssistant features' option. Please be aware that this is an experimental feature and is subject to change. It is expected to reach General Availability (GA) quality in early 2026.&quot;]" />
   </Sequence>
 </Activity>

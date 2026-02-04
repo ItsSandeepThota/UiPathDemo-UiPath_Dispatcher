@@ -4,28 +4,7 @@
     {
       "filePath": "Fixed_SendEmailNotification.xaml",
       "uniqueId": "d9f33f87-0fd3-40ca-a356-792f69584a10",
-      "type": "process",
-      "input": {
-        "type": "object",
-        "properties": {
-          "UiPathEventConnector": {
-            "type": "string"
-          },
-          "UiPathEvent": {
-            "type": "string"
-          },
-          "UiPathEventObjectType": {
-            "type": "string"
-          },
-          "UiPathEventObjectId": {
-            "type": "string"
-          },
-          "UiPathAdditionalEventData": {
-            "type": "string"
-          }
-        },
-        "required": []
-      }
+      "type": "process"
     },
     {
       "filePath": "Main.xaml",
