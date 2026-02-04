@@ -31,7 +31,7 @@
     "pipType": "ChildSession"
   },
   "designOptions": {
-    "projectProfile": "Developement",
+    "projectProfile": "Development",
     "outputType": "Process",
     "libraryOptions": {
       "includeOriginalXaml": false,
